@@ -14,7 +14,7 @@ app.use(
       'https://books-store-git-main-saisaurav78s-projects.vercel.app',
       'https://books-store-oenr1q48s-saisaurav78s-projects.vercel.app',
     ],
-    methods:['GET','POST','DELETE']
+    methods: ['GET', 'POST', 'DELETE'],
   })
 );
 app.use(express.json()); 
