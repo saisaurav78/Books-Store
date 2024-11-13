@@ -8,15 +8,7 @@ import connectDB from './config/connection.js';
 dotenv.config();
 const app = express();
 app.use(
-  cors({
-    origin: [
-      'https://books-store-navy.vercel.app',
-      'https://books-store-git-main-saisaurav78s-projects.vercel.app',
-      'https://books-store-oenr1q48s-saisaurav78s-projects.vercel.app',
-    ],
-    methods: ['GET', 'POST', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization']
-  })
+cors()
 );
 app.use(express.json()); 
 const PORT = process.env.PORT || 3000;
