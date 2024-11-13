@@ -7,7 +7,7 @@ const Books = () => {
 
   const loadBooks = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/books');
+      const response = await axios.get('https://books-store-8u9f.onrender.com/books');
       setBooks(response.data);
     } catch (error) {
       console.error(error);
@@ -21,7 +21,7 @@ const Books = () => {
   const deleteBook = async (id) => {
     if (window.confirm('Are you sure you want to delete this book?')) {
       try {
-        await axios.delete(`http://localhost:3000/books/${id}`);
+        await axios.delete(`https://books-store-8u9f.onrender.com/books/${id}`);
         setBooks(books.filter((book) => book._id !== id));
         alert('Deleted successfully')
       }
