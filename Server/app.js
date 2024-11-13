@@ -15,6 +15,7 @@ app.use(
       'https://books-store-oenr1q48s-saisaurav78s-projects.vercel.app',
     ],
     methods: ['GET', 'POST', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']
   })
 );
 app.use(express.json()); 
