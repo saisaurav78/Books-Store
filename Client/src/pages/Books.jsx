@@ -7,7 +7,7 @@ const Books = () => {
 
   const loadBooks = async () => {
     try {
-      const response = await axios.get('https://books-store-rcgp.vercel.app//books');
+      const response = await axios.get('https://books-store-rcgp.vercel.app/books');
       setBooks(response.data);
     } catch (error) {
       console.error(error);
