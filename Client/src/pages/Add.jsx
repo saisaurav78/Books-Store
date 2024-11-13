@@ -32,7 +32,7 @@ const Add = () => {
     setLoading(true);
 
     axios
-      .post('https://books-store-mou1.vercel.app/books', formData)
+      .post('https://books-store-rcgp.vercel.app/books', formData)
       .then((response) => {
         setLoading(false);
         setSuccess(response.data.message);
